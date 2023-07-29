@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import loginImg from "../../public/loginImg.jpg";
 import { EyeIcon } from "@heroicons/react/24/solid";
 import { EyeSlashIcon } from "@heroicons/react/24/outline";
@@ -16,6 +16,13 @@ const LoginPage = () => {
     password: "",
   });
 
+  const [data, setData] = useState();
+  const getUserDetails = async () => {
+    const res = await axios.get("/api/users/getUsers");
+    console.log(res.data);
+    setData(res.data.data._id);
+  };
+
   const [buttonDisabled, setButtonDisabled] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
 
@@ -25,7 +32,10 @@ const LoginPage = () => {
       const response = await axios.post("/api/users/login", user);
       console.log("Login success", response);
       toast.success("Login success");
-      router.push("/profile/[id]");
+      const res = await axios.get("/api/users/getUsers");
+      console.log(res.data);
+      setData(res.data.data._id);
+      router.push(`/profile/${res.data.data._id}`);
     } catch (error) {
       console.log("Login failed", error.message);
       toast.error("Sorry, You Are Not Allowed to Access This Page");
@@ -116,6 +126,7 @@ const LoginPage = () => {
               </p>
               <p>Forgot Password</p>
             </div>
+
             <Link href="#">
               <Toaster position="top-center" reverseOrder={false} />
               <button

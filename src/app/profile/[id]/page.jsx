@@ -6,6 +6,7 @@ import axios from "axios";
 
 const UserProfile = ({ params }, any) => {
   const router = useRouter();
+
   const logout = async () => {
     try {
       await axios.get("/api/users/logout");
@@ -20,7 +21,9 @@ const UserProfile = ({ params }, any) => {
   return (
     <>
       <div>
-        <h2>Welcome {params.username}</h2>
+        <span className=" p-2 ml-2 rounded bg-orange-500 text-black">
+          {params.id}
+        </span>
         <button
           onClick={logout}
           className="inline-block rounded-md border border-transparent bg-slate-700 px-8 py-3 text-center font-medium text-white hover:bg-slate-800"
