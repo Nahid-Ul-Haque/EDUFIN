@@ -17,11 +17,6 @@ const LoginPage = () => {
   });
 
   const [data, setData] = useState();
-  const getUserDetails = async () => {
-    const res = await axios.get("/api/users/getUsers");
-    console.log(res.data);
-    setData(res.data.data._id);
-  };
 
   const [buttonDisabled, setButtonDisabled] = React.useState(false);
   const [loading, setLoading] = React.useState(false);

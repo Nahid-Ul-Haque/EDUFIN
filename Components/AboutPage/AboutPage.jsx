@@ -10,24 +10,27 @@ const AboutPage = () => {
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              We didnt reinvent the wheel
+              Account Management System
             </h2>
             <p className="mb-4">
-              We are strategists, designers and developers. Innovators and
-              problem solvers. Small enough to be simple and quick, but big
-              enough to deliver the scope you want at the pace you need. Small
-              enough to be simple and quick, but big enough to deliver the scope
-              you want at the pace you need.
+              An Account Management System is a comprehensive software platform
+              that empowers individuals and businesses to effectively manage
+              their financial accounts, transactions, and associated
+              information. It streamlines the process of tracking, organizing,
+              and securing financial data, contributing to better
+              decision-making, improved efficiency, and enhanced customer
+              satisfaction.
             </p>
             <p>
-              We are strategists, designers and developers. Innovators and
-              problem solvers. Small enough to be simple and quick.
+              The system records and categorizes transactions, making it easy
+              for users to monitor their financial activities. This includes
+              deposits, withdrawals, transfers, and payments.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
             <Image
               className="w-full rounded-lg"
-              src="/about_1.jpg"
+              src="/about_7.png"
               alt="office content 1"
               width="200"
               height="400"
@@ -35,7 +38,7 @@ const AboutPage = () => {
             />
             <Image
               className="w-full rounded-lg about"
-              src="/about_2.jpg"
+              src="/about_8.png"
               alt="office content 2"
               width="200"
               height="400"
@@ -48,40 +51,39 @@ const AboutPage = () => {
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">
-              Powering innovation at{" "}
-              <span className="font-extrabold">200,000+</span> companies
-              worldwide
+              Key Features
             </h2>
-            <p className="mb-4 font-light">
-              Track work across the enterprise through an open, collaborative
-              platform. Link issues across Jira and ingest data from other
-              software development tools, so your IT support and operations
-              teams have richer contextual information to rapidly respond to
-              requests, incidents, and changes.
+            <p className="mb-4 font-medium">
+              <h5 className="text-gray-900 dark:text-white">
+                User-Friendly Dashboard:
+              </h5>
+              A well-designed dashboard provides users with an overview of their
+              accounts, balances, recent transactions, and alerts. It serves as
+              a central hub for accessing all account-related information.
             </p>
             <p className="mb-4 font-medium">
-              Deliver great service experiences fast - without the complexity of
-              traditional ITSM solutions.Accelerate critical development work,
-              eliminate toil, and deploy changes with ease.
+              <h5 className="text-gray-900 dark:text-white">
+                Security Measures:
+              </h5>
+              Data security is a top priority. The system employs encryption,
+              two-factor authentication, and other security measures to protect
+              sensitive financial information from unauthorized access.
             </p>
-            <Link
-              href="#"
-              className="inline-flex items-center font-medium text-indigo-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
-            >
-              Learn more
-              <svg
-                className="ml-1 w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            </Link>
+            <p className="mb-4 font-medium">
+              <h5 className="text-gray-900 dark:text-white">
+                Notifications and Alerts:
+              </h5>
+              Users receive alerts for low balances, suspicious transactions,
+              payment due dates, and other important events, ensuring timely
+              actions.
+            </p>
+            <p className="mb-4 font-medium">
+              <h5 className="text-gray-900 dark:text-white">
+                Mobile Accessibility:
+              </h5>
+              A mobile app version of the system allows users to manage their
+              accounts on-the-go, enhancing convenience and accessibility.
+            </p>
           </div>
         </div>
       </section>
@@ -91,17 +93,16 @@ const AboutPage = () => {
             <div className="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
               <div className="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8 dark:bg-gray-900">
                 <div className="mb-12 space-y-4">
-                  <h3 className="text-2xl font-semibold text-white">
+                  <h3 className="text-2xl font-semibold dark:text-white text-gray-900">
                     Graphic Design
                   </h3>
                   <p className="mb-6">
-                    Obcaecati, quam? Eligendi, nulla numquam natus laborum porro
-                    at cum, consectetur ullam tempora ipsa iste officia sed
-                    officiis! Incidunt ea animi officiis.
+                    Graphic design is the art and practice of creating visual
+                    content to convey messages, information, or concepts. It
+                    involves the use of typography, imagery, color, layout, and
+                    other visual elements to create visually engaging and
+                    aesthetically pleasing designs.
                   </p>
-                  <Link href="#" className="block font-medium text-purple-600">
-                    Know more
-                  </Link>
                 </div>
                 <Image
                   src="https://tailus.io/sources/blocks/end-image/preview/images/graphic.svg"
@@ -114,17 +115,16 @@ const AboutPage = () => {
               </div>
               <div className="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8 dark:bg-gray-900">
                 <div className="mb-12 space-y-4">
-                  <h3 className="text-2xl font-semibold text-white">
+                  <h3 className="text-2xl font-semibold dark:text-white text-gray-900">
                     UI Design
                   </h3>
                   <p className="mb-6">
-                    Obcaecati, quam? Eligendi, nulla numquam natus laborum porro
-                    at cum, consectetur ullam tempora ipsa iste officia sed
-                    officiis! Incidunt ea animi officiis.
+                    UI design focuses on creating the visual layout and
+                    interactive elements of digital interfaces, such as websites
+                    and applications. It aims to make the users interaction with
+                    the product efficient, intuitive, and aesthetically
+                    pleasing.
                   </p>
-                  <Link href="#" className="block font-medium text-indigo-600">
-                    Know more
-                  </Link>
                 </div>
                 <Image
                   src="https://tailus.io/sources/blocks/end-image/preview/images/ui-design.svg"
@@ -137,17 +137,15 @@ const AboutPage = () => {
               </div>
               <div className="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8 dark:bg-gray-900">
                 <div className="mb-12 space-y-4">
-                  <h3 className="text-2xl font-semibold text-white">
+                  <h3 className="text-2xl font-semibold dark:text-white text-gray-900">
                     UX Design
                   </h3>
                   <p className="mb-6">
-                    Obcaecati, quam? Eligendi, nulla numquam natus laborum porro
-                    at cum, consectetur ullam tempora ipsa iste officia sed
-                    officiis! Incidunt ea animi officiis.
+                    UX design focuses on the overall experience a user has while
+                    interacting with a digital product. It encompasses the users
+                    emotions, behaviors, perceptions, and interactions
+                    throughout their journey.
                   </p>
-                  <Link href="#" className="block font-medium text-indigo-600">
-                    Know more
-                  </Link>
                 </div>
                 <Image
                   src="https://tailus.io/sources/blocks/end-image/preview/images/ux-design.svg"

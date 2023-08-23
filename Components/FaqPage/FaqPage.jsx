@@ -11,78 +11,92 @@ const FaqPage = () => {
                 Frequently Asked Question
               </h1>
               <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-700  dark:text-white">
-                The most common questions about how our business works and what
-                can do for you.
+                Here are some frequently asked questions (FAQs) about using
+                Next.js in an account management system
               </p>
             </div>
             <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
               <div className="w-full lg:w-1/2 px-4 py-2">
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How Long is this site live?
+                    What is Next.js and how does it relate to an account
+                    management system?
                   </summary>
 
                   <span className="text-gray-700  dark:text-white">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Next.js is a popular React framework that enables
+                    server-side rendering and efficient routing for web
+                    applications. In an account management system, Next.js can
+                    enhance the user experience by providing faster page
+                    loading, better SEO, and smoother navigation.
                   </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                    Can I install/upload anything I want on there?
+                    Why should I consider using Next.js for my account
+                    management website?
                   </summary>
 
                   <span className="text-gray-700  dark:text-white">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Next.js offers benefits such as server-side rendering,
+                    optimized performance, automatic code splitting, and
+                    excellent developer experience. These features can lead to
+                    improved page load times and a better overall user
+                    experience in an account management system.
                   </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How can I migrate to another site?
+                    Is Next.js suitable for building responsive user interfaces
+                    in an account management system?
                   </summary>
 
                   <span className="text-gray-700  dark:text-white">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Absolutely. Next.js supports responsive design principles,
+                    allowing you to create interfaces that adapt to various
+                    screen sizes and devices, essential for an account
+                    management system accessed from different devices.
                   </span>
                 </details>
               </div>
               <div className="w-full lg:w-1/2 px-4 py-2">
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    Can I change the domain you give me?
+                    Can I implement client-side routing for different account
+                    sections using Next.js?
                   </summary>
 
                   <span className="px-4 py-2 text-gray-700  dark:text-white">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Yes, Next.js supports client-side routing using its Link
+                    component. You can easily create routes for different
+                    account sections like transaction history, profile settings,
+                    and account balances.
                   </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How many sites I can create at once?
+                    Are there any performance considerations when using Next.js
+                    in an account management system?
                   </summary>
 
                   <span className="px-4 py-2 text-gray-700  dark:text-white">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    While Next.js provides performance optimizations, it is
+                    essential to optimize images, lazy load assets, and handle
+                    data fetching efficiently to ensure optimal performance in
+                    your account management system.
                   </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How can I communicate with you?
+                    Can I deploy a Next.js account management system to various
+                    hosting platforms?
                   </summary>
 
                   <span className="px-4 py-2 text-gray-700  dark:text-white">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Yes, you can deploy a Next.js app to various hosting
+                    platforms like Vercel, Netlify, or your own server. Vercel
+                    is particularly well-suited for Next.js applications due to
+                    its seamless integration.
                   </span>
                 </details>
               </div>
