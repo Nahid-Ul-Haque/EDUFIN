@@ -9,7 +9,7 @@ connect();
 export async function POST(req, res) {
   try {
     const reqBody = await req.json();
-    const { username, registrationNumber, password, gender } = reqBody;
+    const { username, registrationNumber, password, departmentName } = reqBody;
 
     console.log(reqBody);
 
@@ -28,7 +28,7 @@ export async function POST(req, res) {
       username,
       registrationNumber,
       password: hashedPassword,
-      gender,
+      departmentName
     });
 
     const savedUser = await newUser.save();

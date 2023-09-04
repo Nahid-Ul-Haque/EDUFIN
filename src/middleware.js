@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export function middleware(request) {
   const path = request.nextUrl.pathname;
 
-  const isPublicPath = path === "/signup" || path === "/login";
+  const isPublicPath = path === "/signup" || path === "/login" || path === "/" || path === "/contact" || path === "/about" || path === "/faq";
 
   const token = request.cookies.get("token");
 
@@ -13,6 +13,15 @@ export function middleware(request) {
 
   if (!isPublicPath && !token) {
     return NextResponse.redirect(new URL("/login", request.nextUrl));
+  }
+  if (!isPublicPath && !token) {
+    return NextResponse.redirect(new URL("/contact", request.nextUrl));
+  }
+  if (!isPublicPath && !token) {
+    return NextResponse.redirect(new URL("/faq", request.nextUrl));
+  }
+  if (!isPublicPath && !token) {
+    return NextResponse.redirect(new URL("/about", request.nextUrl));
   }
 }
 

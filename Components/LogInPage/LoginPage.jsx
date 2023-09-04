@@ -29,8 +29,8 @@ const LoginPage = () => {
       toast.success("Login success");
       const res = await axios.get("/api/users/getUsers");
       console.log(res.data);
-      setData(res.data.data._id);
-      router.push(`/profile/${res.data.data._id}`);
+      setData(res.data.data.username,);
+      router.push(`/profile/${res.data.data.username}`);
     } catch (error) {
       console.log("Login failed", error.message);
       toast.error("Sorry, You Are Not Allowed to Access This Page");

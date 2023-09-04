@@ -15,6 +15,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please provide a password"],
   },
+  departmentName:{
+    type: String,
+    required: [true, "Please provide a department name"],
+  },
   isVerfied: {
     type: Boolean,
     default: false,

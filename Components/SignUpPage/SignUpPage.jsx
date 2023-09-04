@@ -17,6 +17,7 @@ const SignUpPage = () => {
     username: "",
     password: "",
     confirmPassword: "",
+    departmentName:""
   });
   const [buttonDisabled, setButtonDisabled] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
@@ -100,12 +101,18 @@ const SignUpPage = () => {
             <div className="flex flex-col text-gray-400 py-2">
               <label>Department Name</label>
               <select
+              id="departmentName"
+              type="string"
+              value={user.departmentName}
+              onChange={(e) =>
+                setUser({ ...user, departmentName: e.target.value })
+              }
               
               className="rounded-lg bg-gray-700 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none "
             >
-              <option value="seller">ECE</option>
-              <option value="Buyer">BBA</option>
-              <option value="Buyer">CSE</option>
+              <option >ECE</option>
+              <option >BBA</option>
+              <option >CSE</option>
             </select>
             </div>
             <div className="text-gray-400 py-2">
@@ -139,6 +146,13 @@ const SignUpPage = () => {
               minLength={8}
               value={user.password}
               valueAgain={user.confirmPassword}
+              messages={{
+                minLength: "at least 8 characters,",
+                specialChar: "a special character,",
+                number: "a number,",
+                capital: "a capital letter",
+                match: "password match",
+              }}
             />
             <div className="flex flex-col text-gray-400 py-2">
               <label>Confirm Password</label>
